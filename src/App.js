@@ -4,6 +4,7 @@ import Example2 from './useInput'
 import Example3 from './useTabs'
 import Example4 from './useEffect'
 import Example5 from './useTitle'
+import Example6 from './useClick'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Example3 />
       <Example4 />
       <Example5 />
+      <Example6 />
     </div>
   );
 }
