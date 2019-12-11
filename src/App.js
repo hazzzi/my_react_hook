@@ -5,6 +5,8 @@ import Example3 from './useTabs'
 import Example4 from './useEffect'
 import Example5 from './useTitle'
 import Example6 from './useClick'
+import Example7 from './useConfirm'
+import Example8 from './usePreventLeave'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Example4 />
       <Example5 />
       <Example6 />
+      <Example7 />
+      <Example8 />
     </div>
   );
 }
