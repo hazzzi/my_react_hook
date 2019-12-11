@@ -6,8 +6,7 @@ const Example = () => {
   const decrementItem = () => setItem(item - 1);
   return (
     <div className="App">
-      <h1>Hello hook {item}</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>Hello Hook useState {item}</h1>
       <button onClick={incrementItem}> ++ </button>
       <button onClick={decrementItem}> -- </button>
     </div>

@@ -23,7 +23,7 @@ const Example = () => {
   const name = useInput("Mr.", maxLen)
   return (
     <div>
-      <h1>Hello Hook Input </h1>
+      <h1>Hello Hook useInput</h1>
       <input placeholder="Name" {...name} />
       {/* {...name} === value = {name.value} onChange = {name.onChange} */}
     </div>
