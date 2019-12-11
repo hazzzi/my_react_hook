@@ -1,10 +1,12 @@
 import React from 'react';
-import Example from './Ex_useState'
+import Example1 from './useState'
+import Example2 from './useInput'
 
 function App() {
   return (
     <div className="App">
-      <Example />
+      <Example1 />
+      <Example2 />
     </div>
   );
 }
