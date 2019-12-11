@@ -7,6 +7,7 @@ import Example5 from './useTitle'
 import Example6 from './useClick'
 import Example7 from './useConfirm'
 import Example8 from './usePreventLeave'
+import Example9 from './useBeforeLeave'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Example6 />
       <Example7 />
       <Example8 />
+      <Example9 />
     </div>
   );
 }
