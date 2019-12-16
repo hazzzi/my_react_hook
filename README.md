@@ -127,6 +127,7 @@ function ThemedButton() {
 - `(state, action) => newSate` 형태로 받고 `dispatch`와 짝의 형태로 현재 state를 반환
 - 초기 state를 지연 생성 가능, `init` 함수를 세 번째 인자로 전달함
 
+
 ```javascript
 function init(initialCount) {
 	return { count: initialCount };
