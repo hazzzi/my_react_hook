@@ -4,13 +4,14 @@
 
 ## useState
 
-`const [count, setCount] = useState(0) // 첫 번째 렌더링에만 딱 한번 사용된다.`
-함수 컴포넌트 안에서 Hook으로 state를 사용할 수 있음
-this를 호출하지 않아도 된다
-`useState()`의 인자로 넘겨주는 값은 state의 초기 값
-2개의 아이템쌍이 들어있는 배열로 만들어짐
+`const [count, setCount] = useState(0)`  
+첫 번째 렌더링에만 딱 한번 사용된다.  
+함수 컴포넌트 안에서 Hook으로 state를 사용할 수 있음  
+this를 호출하지 않아도 된다  
+`useState()`의 인자로 넘겨주는 값은 state의 초기 값  
+2개의 아이템쌍이 들어있는 배열로 만들어짐 
 
-`setCount` : set으로 `count` 변수의 값을 갱신함
+`setCount` set으로 `count` 변수의 값을 갱신함
 
 ### 여러 state 변수 선언하기
 
@@ -31,10 +32,12 @@ function handleAgeClick() {
 - 수행중인 작업을 기반으로 코드를 분할 가능
 - 여러번 사용할 수 있다.
 
-`useEffect(() => {}) // componentDidMount`
-`useEffect(() => {}, []) // componentDidMount, 첫 마운트시 한번만 실행`
-`useEffect(() => {}, [variable]) // componentDidUpdate, variable이 업데이트 될때마다`
-`useEffect(() => { return () => {} }) // componentWillUnmount`
+``` javascript
+useEffect(() => {}) // componentDidMount
+useEffect(() => {}, []) // componentDidMount, 첫 마운트시 한번만 실행
+useEffect(() => {}, [variable]) // componentDidUpdate, variable이 업데이트 될때마다
+useEffect(() => { return () => {} }) // componentWillUnmount
+```
 
 _예제_
 
@@ -65,9 +68,9 @@ ChatAPI.unsubscribeFromFriendStatus(300, handleStatusChange); // Clean up last e
 
 ## 나만의 Hook 만들기
 
-여러 컴포넌트에서 사용할 수 있음
-이름이 `use`로 시작하고 안에서 다른 Hook을 호출
-`useSomething`
+여러 컴포넌트에서 사용할 수 있음  
+이름이 `use`로 시작하고 안에서 다른 Hook을 호출  
+`useSomething`의 형태
 
 ```javascript
 function useMyHook() {}
@@ -88,7 +91,7 @@ function fun2() {
 `const value = useContext(MyContext)`
 
 - 컴포넌트를 중첩하지 않고도 React context를 구독할 수 있게해줌
-- 전달하는 인자는 **context 객체 그 자체** 여야함
+- 전달하는 인자는 **context 객체 그 자체** 여야함  
   _예제_
 
 ```javascript
